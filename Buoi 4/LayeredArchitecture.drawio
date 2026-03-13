@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
+  <diagram name="Page-1" id="Okwhb1KBuk2PBeGWzEgA">
+    <mxGraphModel dx="1106" dy="605" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#FFFFFF,#FFFFFF)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nrFyeJZqo0Zc52v0vsv1-35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" value="&lt;b&gt;Presentation Layer&lt;/b&gt;&lt;div&gt;&lt;i&gt;Giao diện người dùng và xử lý HTTP Request.&lt;/i&gt;&lt;/div&gt;&lt;div&gt;Admin Dashboard, Post Editor, REST Controllers.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="297" x="247" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="nrFyeJZqo0Zc52v0vsv1-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" value="&lt;b&gt;Business Layer&lt;/b&gt;&lt;div&gt;&lt;i&gt;Thực hiện các logic nghiệp vụ, kiểm tra điều kiện.&lt;/i&gt;&lt;b&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;ContentService, UserService, PermissionChecker.&lt;i&gt;&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="59" width="296" x="248" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="nrFyeJZqo0Zc52v0vsv1-43" edge="1" parent="1" source="nrFyeJZqo0Zc52v0vsv1-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="395.5" y="346" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nrFyeJZqo0Zc52v0vsv1-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" value="&lt;b&gt;Persistence Layer&lt;/b&gt;&lt;div&gt;&lt;i&gt;Tương tác với cơ sở dữ liệu (ORM/DAO).&lt;/i&gt;&lt;b&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;PostRepository, UserRepository, CategoryDAO.&lt;i&gt;&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="297" x="247" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="nrFyeJZqo0Zc52v0vsv1-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" value="&lt;b&gt;Database Layer&lt;/b&gt;&lt;div&gt;&lt;i&gt;Lưu trữ dữ liệu thực tế.&lt;/i&gt;&lt;b&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;MySQL, PostgreSQL hoặc SQL Server.&lt;i&gt;&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="295" x="251" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="nrFyeJZqo0Zc52v0vsv1-40" edge="1" parent="1" source="nrFyeJZqo0Zc52v0vsv1-35" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#1ba1e2;strokeColor=#006EAF;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="nrFyeJZqo0Zc52v0vsv1-37" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="396" y="130" as="sourcePoint" />
+            <mxPoint x="386" y="177" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nrFyeJZqo0Zc52v0vsv1-41" edge="1" parent="1" source="nrFyeJZqo0Zc52v0vsv1-38" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#1ba1e2;strokeColor=#006EAF;entryX=0.483;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryPerimeter=0;" target="nrFyeJZqo0Zc52v0vsv1-39" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="398" y="328" as="sourcePoint" />
+            <mxPoint x="398" y="372" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nrFyeJZqo0Zc52v0vsv1-42" edge="1" parent="1" source="nrFyeJZqo0Zc52v0vsv1-37" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#1ba1e2;strokeColor=#006EAF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="nrFyeJZqo0Zc52v0vsv1-38" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="400" y="215" as="sourcePoint" />
+            <mxPoint x="397" y="265" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
